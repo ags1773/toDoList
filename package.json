@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "to do list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ags1773/toDoList.git"
+  },
+  "author": "amogh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ags1773/toDoList/issues"
+  },
+  "homepage": "https://github.com/ags1773/toDoList#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
+}

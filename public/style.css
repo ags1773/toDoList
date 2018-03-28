@@ -1,0 +1,141 @@
+#linearBg1 { /* fallback */ background-color: #1a82f7; 
+			/*background-image: url(images/linear_bg_1.png); */
+			background-repeat: repeat-y; 
+
+			/* Safari 4-5, Chrome 1-9 */ 
+			background: -webkit-gradient(linear, left top, right top, from(#ffffeb), to(#03c8d8)); 
+
+			/* Safari 5.1, Chrome 10+ */ 
+			background: -webkit-linear-gradient(left, #03c8d8, #ffffeb); 
+
+			/* Firefox 3.6+ */ 
+			background: -moz-linear-gradient(left, #03c8d8, #ffffeb); 
+
+			/* IE 10 */ 
+			background: -ms-linear-gradient(left, #03c8d8, #ffffeb); 
+
+			/* Opera 11.10+ */ 
+			background: -o-linear-gradient(left, #03c8d8, #ffffeb); 
+			}	
+
+#toDoList{
+	width: 25%;
+	min-width: 350px;
+	margin: 8rem auto 0;
+	font-family: 'Muli', sans-serif;
+	background-color: white;
+}			
+
+#toDoList h2{
+	display: inline-block;
+	width: 85%;
+	text-transform: uppercase;
+	padding-left: 0.75rem;
+	font-weight: normal;
+}
+
+#toDoList h2, #add{
+	margin: 0;
+	height: 100%;
+	color: white;
+}
+
+#add{
+	float: right;
+	width: 10%;
+	border: 0;
+	padding: 0;	
+	background-color: inherit;
+	font-size: 1.3rem;
+}
+
+#toDoList > div{
+	background-color: #0382d0;
+	line-height: 2.5rem;
+	height: 2.5rem;
+	padding: 5px;
+}
+
+input{
+	padding: 0;
+	padding-left: 0.75rem;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+	width: 100%;
+	border: 0;
+	line-height: 3rem;
+	background-color: #fff3f3;
+	font-size: 1.5rem;
+	color: #0382d0;
+	/*display: none;*/
+}
+input::placeholder{
+	color: #bfbfbf;
+}
+#add i:hover{
+	transform: scaleX(1.5) scaleY(1.5);
+	-webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Safari/Chrome, other WebKit */
+    -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);    /* Firefox, other Gecko */
+	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+li{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	color: #262626;
+	overflow: auto;
+	padding-left: 1rem;
+}
+li:nth-child(even){
+	background-color: #fff7f7;
+}
+
+.done{
+	text-decoration: line-through #858585;
+	color: #858585;
+}
+
+#toDoList .liHover{
+	transform: scaleX(1.05) scaleY(1.05);
+	background-color: #81c0e7;
+	-webkit-transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96); /* Safari/Chrome, other WebKit */
+    -moz-transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);    /* Firefox, other Gecko */
+	transition: all 0.1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+#deleteBtn{
+	border: 0;
+	padding: 0;
+	background-color: #c94c4c;
+	color: white;
+	width: 100%;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	display: none;
+}
+/*#deleteBtn div:first-child{
+	display: none;						comment this line out
+}
+#deleteBtn div:last-child{
+	display: none;
+}
+#deleteBtn span{
+	display: inline-block;
+	margin: 0 auto;
+	width: 50%;
+}
+#deleteBtn span:first-child{
+	background-color: purple;
+	float: left;
+}
+#deleteBtn span:last-child{
+	background-color: #02a17d;	
+	float: right;
+}*/
